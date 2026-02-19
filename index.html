@@ -31,7 +31,8 @@
         </label>
 
         <label>
-          Volume:
+          Volume (0–1):
+          <span id="masterVolVal"></span>
           <input id="masterVol" type="range" min="0" max="1" step="0.02" value="0.28">
         </label>
       </div>
@@ -45,7 +46,8 @@
       <h3>Additive</h3>
       <div class="row">
         <label>
-          Partials 3 to 10:
+          Partials (3–12):
+          <span id="partialsVal"></span>
           <input id="partials" type="range" min="3" max="12" step="1" value="6">
         </label>
       </div>
@@ -54,12 +56,14 @@
       <h3>AM</h3>
       <div class="row">
         <label>
-          AM Mod Freq (Hz):
+          AM Mod Freq (0.25–300 Hz):
+          <span id="amModFreqVal"></span>
           <input id="amModFreq" type="range" min="0.25" max="300" step="0.25" value="18">
         </label>
 
         <label>
-          AM Depth (0..1):
+          AM Depth (0–1):
+          <span id="amDepthVal"></span>
           <input id="amDepth" type="range" min="0" max="1" step="0.02" value="0.55">
         </label>
       </div>
@@ -68,12 +72,14 @@
       <h3>FM</h3>
       <div class="row">
         <label>
-          FM Mod Freq (Hz):
+          FM Mod Freq (1–1500 Hz):
+          <span id="fmModFreqVal"></span>
           <input id="fmModFreq" type="range" min="1" max="1500" step="1" value="220">
         </label>
 
         <label>
-          FM Index / Deviation (Hz):
+          FM Index / Deviation (0–1600 Hz):
+          <span id="fmIndexVal"></span>
           <input id="fmIndex" type="range" min="0" max="1600" step="2" value="140">
         </label>
       </div>
@@ -82,22 +88,26 @@
       <h3>Envelope (ADSR-ish)</h3>
       <div class="row">
         <label>
-          Attack (s):
+          Attack (0.002–0.8 s):
+          <span id="attackVal"></span>
           <input id="attack" type="range" min="0.002" max="0.8" step="0.002" value="0.02">
         </label>
 
         <label>
-          Decay (s):
+          Decay (0.002–2 s):
+          <span id="decayVal"></span>
           <input id="decay" type="range" min="0.002" max="2" step="0.002" value="0.2">
         </label>
 
         <label>
-          Sustain (0..1):
+          Sustain (0–1):
+          <span id="sustainVal"></span>
           <input id="sustain" type="range" min="0" max="1" step="0.02" value="0.75">
         </label>
 
         <label>
-          Release (s):
+          Release (0.01–4 s):
+          <span id="releaseVal"></span>
           <input id="release" type="range" min="0.01" max="4" step="0.01" value="0.6">
         </label>
       </div>
@@ -106,17 +116,20 @@
       <h3>LFO → Filter (global)</h3>
       <div class="row">
         <label>
-          LFO Rate (Hz):
+          LFO Rate (0.1–16 Hz):
+          <span id="lfoRateVal"></span>
           <input id="lfoRate" type="range" min="0.1" max="16" step="0.1" value="0.8">
         </label>
 
         <label>
-          LFO Depth (Hz):
+          LFO Depth (0–5000 Hz):
+          <span id="lfoDepthVal"></span>
           <input id="lfoDepth" type="range" min="0" max="5000" step="10" value="900">
         </label>
 
         <label>
-          Filter Base Cutoff (Hz):
+          Filter Base Cutoff (150–14000 Hz):
+          <span id="filterBaseVal"></span>
           <input id="filterBase" type="range" min="150" max="14000" step="25" value="1200">
         </label>
       </div>
@@ -126,3 +139,4 @@
     <script src="main.js?v=3"></script>
   </body>
 </html>
+
